@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>MusicPlay Js 插件</title>
+  <link href="css/font-awesome.css" rel="stylesheet">
+  <link href="css/font-awesome.min.css" rel="stylesheet">
+  <link href="css/wpixel-music.css" rel="stylesheet">
+  <style>
+	@font-face{
+		font-family:"FontAwesome";
+		src:url('fonts/fontawesome-webfont.eot') format('eot'),
+			url('fonts/fontawesome-webfont.ttf') format('truetype'),
+			url('fonts/fontawesome-webfont.woff') format('woff'),
+			url('fonts/fontawesome-webfont.woff') format('woff'),
+			url('fonts/fontawesome-webfont.svg') format('svg');
+		font-weight:normal;
+		font-style:normal;
+	}
+	*{padding:0;margin:0;}
+	body{font-size:12px;font-family:"Times New Roman";color:#000;height:100%;}
+	li{list-style:none;}
+	a{text-decoration:none;color:#666;}
+	i{color:#fff;}
+	input{outline:none;}
+
+  	.section{width:50%;margin:0 auto;}
+	.section ul li{width:100%;border:1px solid #eee;background:#fff;margin-top:20px;}
+	.section ul li .c_title{font-size:25px;text-align:center;margin:30px 0;display:block;}
+	.section ul li .c_banner{margin:0 auto;display:block;}
+	.section ul li .music-play{width:90%;margin:20px auto;}
+	.section ul li .pp{margin:20px;height:20px;}
+  </style>
+ </head>
+ <body style="background:#F4F4F4;">
+	<section class="section">
+		<ul>
+			<li>
+				<a class="c_title" href="javascript:void(0);">
+					<h2>MusicPlay Js 插件</h2>
+				</a>
+				<img class="c_banner" src="images/img.jpg" width="90%"/>
+				<div id="music" class="music-play"></div>
+				<p class="pp"></p>
+			</li>
+		</ul>
+	</section>
+ <script type="text/javascript" src="js/wpixel-music.js"></script>
+ <script type="text/javascript">
+		
+		window.onload = function(){
+			var playlist = [{
+					title:"《後來的我們》- 粵語版",
+					author:"全星",
+					mp3:"mp3/《後來的我們》- 粵語版.mp3",
+					poster: "images/hldwm.jpg"
+				},{
+					title:"椿",
+					author:"沈以诚",
+					mp3:"mp3/沈以诚 椿.mp3",
+					poster: "images/c.jpg"
+				},{
+					title:"PLANET",
+					author:"ラムジ",
+					mp3: "mp3/ラムジ PLANET.mp3",
+					poster: "images/p.jpg"
+			}];
+			new MusicDom({
+				id : "music",
+				playlist : playlist
+			}).init();
+		}
+		
+	</script>
+ </body>
+</html>

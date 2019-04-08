@@ -1,0 +1,107 @@
+.music-player{
+	width:100%;
+	border:1px solid #eee;
+	border-bottom:none;
+	margin:0 auto;
+}
+.music-player .info{
+	width:100%;
+	height:80px;
+	border-bottom:1px solid #eee;
+}
+.music-player .info .icon-repeat{
+	width:11%;
+	padding: 8px;
+	float:left;
+	position:relative;
+}
+.music-player .info .icon-repeat .play{
+	border:2px solid #fff;
+	height:30px;
+	width:30px;
+	border-radius:30px;
+	position:absolute;
+	top:19px;
+	left:21px;
+	text-align:center;
+}
+.music-player .info .icon-repeat .play i{
+	color:#fff;
+	line-height:30px;
+}
+.music-player .info .info-right{
+	width:86%;
+	float:left;
+}
+.music-player .info .info-right .ri-top .music-desc{
+	float:left;
+}
+.music-player .info .info-right .ri-top .music-desc .song-name{
+	font-size:16px;
+	margin-top:10px;
+}
+.music-player .info .info-right .ri-top .music-desc .singer{
+	margin-top:4px;
+}
+.music-player .info .info-right .ri-top .music-time{
+	float:right;
+	margin:33px 3% 0 0;
+}
+.music-player .info .info-right .ri-top .music-time p{
+	float:left;
+	font-size:14px;
+}
+.music-player .info .info-right .ri-top .music-time p i{
+	width:16px;
+	color:#666;
+	cursor:pointer;
+}
+.music-player .info .info-right .ti-bom{
+	width:97%;
+	margin-top:15px;
+	position:relative;
+}
+.music-player .info .info-right .ti-bom .total-time{
+	cursor:pointer;
+	width:100%;
+	height:3px;
+	background:#ddd;
+	
+}
+.music-player .info .info-right .ti-bom .progress{
+	cursor:pointer;
+	width:0%;
+	height:3px;
+	background:#5895be;
+	position:absolute;
+	top:0;
+	left:0;
+}
+.music-player .info .info-right .ti-bom .pro-click{
+	width:10px;
+	height:10px;
+	background:#fff;
+	border:1px solid green;
+	border-radius:10px;
+	position:absolute;
+	top:-5px;
+	left:0%;
+	cursor:pointer;
+}
+.music-player .controls li{
+	width:100%;
+	border-bottom:1px solid #eee;
+	line-height:40px;
+	cursor:pointer;
+	margin-top:0;
+}
+.music-player .controls li:hover{
+	background:#eaeaea;
+}
+.music-player .controls li p{
+	float:left;
+	font-size:16px;
+	margin-left:12px;
+}
+
+.clear{clear:both;}
